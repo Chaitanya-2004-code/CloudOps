@@ -1,0 +1,52 @@
+﻿# Local configuration and secrets
+.env
+.env.*
+!.env.example
+!.env.selfhost.example
+*.pem
+*.key
+*.p12
+
+# Python (future stages)
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.db
+*.sqlite
+*.sqlite3
+*.egg-info/
+build/
+
+# Node (future stages)
+node_modules/
+dist/
+coverage/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Terraform state (future stages; state may contain secrets)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+*.tfplan
+crash.log
+crash.*.log
+
+# Local reports and temporary files
+*.log
+tmp/
+.tmp/
+.cloudops/runtime/
+.cloudops/backups/
